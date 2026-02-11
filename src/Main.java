@@ -20,13 +20,17 @@ public static void main(String[] args){
 
         switch(n){
             case 1:
-                System.out.println("Ingresa el nombre del Cliente : ")
+                System.out.print("Ingresa el nombre del Cliente : ")
                 cliente1.setNombre(sc.nextLine());
 
-                System.out.println("Ingresa el id del Cliente : ")
+                System.out.println();
+
+                System.out.print("Ingresa el id del Cliente : ")
                 cliente1.setId(sc.nextInt());
 
-                System.out.println("Ingresa el saldo del Cliente : ")
+                System.out.println();
+
+                System.out.print("Ingresa el saldo del Cliente : ")
                 cliente1.setSaldo(sc.nextDouble());
                 break;
 
