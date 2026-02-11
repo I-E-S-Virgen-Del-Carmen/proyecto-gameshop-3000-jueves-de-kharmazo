@@ -1,6 +1,7 @@
 import java.util.*;
 public static void main(String[] args){
     Scanner sc = new Scanner(SystemIn);
+
     int n = sc.nextInt();
 
     Cliente cliente1 = new Cliente();
@@ -47,7 +48,6 @@ public static void main(String[] args){
                  System.out.println("Añade un porcentaje(10,20,...)");
                  juego1.aplicarDescuento(sc.nextDouble());
                  break;
-
         }
     }while(n != 5);
 }
