@@ -1,54 +1,53 @@
-public class Juego {
+import java.util.*;
+public static void main(String[] args){
+    Scanner sc = new Scanner(SystemIn);
+    int n = sc.nextInt();
 
-      private String titulo;
-      private double precio;
-      private String genero;
+    Cliente cliente1 = new Cliente();
+    Juego juego1 = new Juego();
 
-      public Juego(String titulo, double precio, String genero) {
-            this.titulo = titulo;
-            this.precio = precio;
-            this.genero = genero;
-      }
+    do {
+        System.out.println("Opción 1: Registrar Cliente" );
+        System.out.println("Opción 2: Ver datos del Cliente" )
+        System.out.println("Opción 3: Ingresar datos del Juego" );
+        System.out.println("Opción 4: Mostrar datos del Juego" );
+        System.out.println("Opción 5: Aplicar descuento" );
+        switch(n){
+            case 1:
+                System.out.println("Ingresa el nombre del Cliente : ")
+                cliente1.setNombre(sc.nextLine());
 
-      public String getTitulo() {
-            return titulo;
-      public double getPrecio() {
-            return precio; }
+                System.out.println("Ingresa el id del Cliente : ")
+                cliente1.setId(sc.nextInt());
 
-      public String getGenero() {
-            return genero;
-      }
+                System.out.println("Ingresa el saldo del Cliente : ")
+                cliente1.setSaldo(sc.nextDouble());
+                break;
 
-      public void setTitulo(String titulo) {
-            this.titulo = titulo;
-      }
+            case 2:
+                System.out.println(cliente1.toString());
+                break;
 
-      public void setPrecio(double precio) {
-            if (precio >= 0) {
-                  this.precio = precio;
-            } else {
-                  System.out.println("El precio no puede ser negativo.");
-            }
-      }
+            case 3:
+                System.out.println("Ingresa el titulo: ")
+                juego1.setTitulo(sc.nextLine());
 
-      public void setGenero(String genero) {
-            this.genero = genero;
-      }
+                System.out.println("Ingresa el precio del Juego : ")
+                juego1.setPrecio(sc.nextDouble());
 
-      public void mostrarInfo() {
-            System.out.println("----- Información del Juego -----");
-            System.out.println("Título: " + titulo);
-            System.out.println("Precio: $" + precio);
-            System.out.println("Género: " + genero);
-      }
+                System.out.println("Ingresa el género del Juego : ")
+                juego1.setGenero(sc.nextLine());
+                break;
 
-      public void aplicarDescuento(double porcentaje) {
-            if (porcentaje > 0 && porcentaje <= 100) {
-                  double descuento = precio * (porcentaje / 100);
-                  precio -= descuento;
-                  System.out.println("Descuento aplicado. Nuevo precio: $" + precio);
-            } else {
-                  System.out.println("Porcentaje inválido.");
-            }
-      }
+             case 4:
+                 juego1.mostrarInfo();
+                 break;
+
+             case 5:
+                 System.out.println("Añade un porcentaje(10,20,...)");
+                 juego1.aplicarDescuento(sc.nextDouble());
+                 break;
+
+        }
+    }while(n != 5);
 }
