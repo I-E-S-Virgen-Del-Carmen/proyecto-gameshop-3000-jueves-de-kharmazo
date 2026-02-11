@@ -9,10 +9,15 @@ public static void main(String[] args){
 
     do {
         System.out.println("Opción 1: Registrar Cliente" );
+
         System.out.println("Opción 2: Ver datos del Cliente" )
+
         System.out.println("Opción 3: Ingresar datos del Juego" );
+
         System.out.println("Opción 4: Mostrar datos del Juego" );
+
         System.out.println("Opción 5: Aplicar descuento" );
+
         switch(n){
             case 1:
                 System.out.println("Ingresa el nombre del Cliente : ")
