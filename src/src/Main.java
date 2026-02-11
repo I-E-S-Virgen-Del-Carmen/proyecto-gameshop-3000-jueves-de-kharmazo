@@ -123,6 +123,7 @@ public class Main {
 
                                         cliente1.setSaldo(cliente1.getSaldo() - juego1.getPrecio());
                                         cliente1.agregarJuego();
+                                        System.out.println("Compraste el juego, mirar datos del cliente para verificar");
                                     }else{
                                         System.out.println("Saldo insuficiente");
                                     }
@@ -144,6 +145,7 @@ public class Main {
 
                                         cliente1.setSaldo(cliente1.getSaldo() - juego2.getPrecio());
                                         cliente1.agregarJuego();
+                                        System.out.println("Compraste el juego, mirar datos del cliente para verificar");
                                     }else{
                                         System.out.println("Saldo insuficiente");
                                     }
@@ -165,6 +167,7 @@ public class Main {
 
                                         cliente1.setSaldo(cliente1.getSaldo() - juego3.getPrecio());
                                         cliente1.agregarJuego();
+                                        System.out.println("Compraste el juego, mirar datos del cliente para verificar");
                                     }else{
                                         System.out.println("Saldo insuficiente");
                                     }
