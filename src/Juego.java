@@ -41,7 +41,6 @@ public class Juego {
                   System.out.println("Precio: $" + precio);
                   System.out.println("Género: " + genero);
             }
-
             public void aplicarDescuento(double porcentaje) {
                   if (porcentaje > 0 && porcentaje <= 100) {
                         double descuento = precio * (porcentaje / 100);
