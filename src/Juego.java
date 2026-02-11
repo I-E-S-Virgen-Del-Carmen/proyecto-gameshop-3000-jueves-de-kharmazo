@@ -48,6 +48,8 @@ public class Juego {
                         System.out.println("Descuento aplicado. Nuevo precio: $" + precio);
                   } else {
                         System.out.println("Porcentaje inválido.");
+gdfdf
+
                   }
             }
       }
