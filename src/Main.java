@@ -12,11 +12,8 @@ public class Juego {
 
       public String getTitulo() {
             return titulo;
-      }
-
       public double getPrecio() {
-            return precio;
-      }
+            return precio; }
 
       public String getGenero() {
             return genero;
